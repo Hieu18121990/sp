@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Giới thiệu về AIGROUP</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 40px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .navbar .logo {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      font-size: 18px;
+      color: #007BFF;
+    }
+
+    .navbar nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #000;
+      font-size: 15px;
+    }
+
+    .navbar nav a.active {
+      color: #2e74ff;
+      font-weight: bold;
+      border-bottom: 2px solid #2e74ff;
+      padding-bottom: 2px;
+    }
+
+    .navbar .actions button {
+      background: #2e74ff;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 8px 16px;
+      cursor: pointer;
+    }
+
+    /* Footer Section */
+    .footer {
+      background: linear-gradient(to bottom right, #165dff, #398fff);
+      color: white;
+      text-align: center;
+      padding: 60px 20px 40px;
+      position: relative;
+    }
+
+    .footer .logo img {
+      width: 70px;
+      margin-bottom: 10px;
+    }
+
+    .footer h2 {
+      margin: 10px 0;
+      font-size: 24px;
+    }
+
+    .footer .info {
+      margin: 20px auto;
+      max-width: 600px;
+      font-size: 16px;
+      line-height: 1.8;
+      text-align: left;
+    }
+
+    .footer .info i {
+      margin-right: 8px;
+    }
+
+    .footer .social {
+      margin-top: 30px;
+    }
+
+    .footer .social h3 {
+      margin-bottom: 10px;
+    }
+
+    .footer .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 10px;
+    }
+
+    .footer .social-icons i {
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .footer .copyright {
+      margin-top: 30px;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    /* Zalo + Messenger */
+    .floating-buttons {
+      position: fixed;
+      bottom: 30px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .floating-buttons .btn {
+      background: #2e74ff;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      color: white;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      cursor: pointer;
+    }
+  </style>
+
+  <!-- FontAwesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <div class="logo">AIGROUP</div>
+  <head>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Menu liên kết Google</title>
+      <style>
+        * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+    
+        body {
+          font-family: Arial, sans-serif;
+        }
+    
+        .navbar {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          background-color: #f8f8f8;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 15px 20px;
+          z-index: 1000;
+          box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+    
+        .logo {
+          font-size: 20px;
+          font-weight: bold;
+          color: #000;
+        }
+    
+        .navbar ul {
+          list-style: none;
+          display: flex;
+          gap: 20px;
+        }
+    
+        .navbar ul li a {
+          text-decoration: none;
+          color: #000;
+          font-weight: bold;
+          transition: all 0.3s ease;
+        }
+    
+        .navbar ul li a:hover {
+          color: #0084ff;
+          text-decoration: underline;
+        }
+    
+        .hamburger {
+          display: none;
+          font-size: 24px;
+          cursor: pointer;
+        }
+    
+        @media (max-width: 768px) {
+          .navbar ul {
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            background-color: #fff;
+            width: 200px;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            display: none;
+          }
+    
+          .navbar ul.show {
+            display: flex;
+          }
+    
+          .hamburger {
+            display: block;
+          }
+        }
+    
+        .content {
+          margin-top: 80px;
+          padding: 20px;
+        }
+      </style>
+    </head>
+    <body>
+    
+      <!-- Menu -->
+      <nav class="navbar">
+        <div class="logo">AIGROUP</div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <ul id="menu">
+          <li><a href="https://www.google.com/search?q=trang+chu" target="_blank">Trang chủ</a></li>
+          <li><a href="https://www.google.com/search?q=giới+thiệu" target="_blank">Giới thiệu</a></li>
+          <li><a href="https://www.google.com/search?q=tin+tức" target="_blank">Tin tức</a></li>
+          <li><a href="https://www.google.com/search?q=báo+bài" target="_blank">Báo bài</a></li>
+          <li><a href="https://www.google.com/search?q=hoạt+động+học+sinh" target="_blank">Hoạt động học sinh</a></li>
+          <li><a href="https://www.google.com/search?q=thời+khoá+biểu" target="_blank">Thời khoá biểu</a></li>
+          <li><a href="https://www.google.com/search?q=xem+điểm" target="_blank">Xem điểm</a></li>
+          <li><a href="https://www.google.com/search?q=đăng+nhập" target="_blank">Đăng nhập</a></li>
+        </ul>
+      </nav>
+    
+      <!-- Nội dung -->
+      <script>
+        function toggleMenu() {
+          document.getElementById('menu').classList.toggle('show');
+        }
+      </script>
+  </div>
+</div>
+<!-- Footer Info -->
+<div class="footer">
+  <div class="logo">
+    <img src="Ảnh chụp Màn hình 2025-04-13 lúc 18.40.00.png" alt="Logo AIGROUP">
+  </div>
+  <h2>AIGROUP</h2>
+  <title>Khóa học - Ai GROUP</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f6fa;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      width: 100%;
+      padding: 30px 0;
+      text-align: center;
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header img {
+      width: 140px;
+      height: auto;
+    }
+
+    h1 {
+      margin: 30px 0 10px;
+      color: #333;
+    }
+
+    .courses {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+      flex-wrap: wrap;
+      max-width: 1200px;
+    }
+
+    .course-card {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .course-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .course-title {
+      font-size: 20px;
+      color: #1e3a8a;
+      margin-bottom: 10px;
+    }
+
+    .course-desc {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .add-btn {
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background-color 0.2s ease;
+    }
+
+    .add-btn:hover {
+      background-color: #1e40af;
+    }
+
+    @media (max-width: 768px) {
+      .courses {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Tiêu đề -->
+  <h1>Các Khoá Học Trực Tuyến</h1>
+
+  <!-- Danh sách khóa học -->
+  <div class="courses">
+    <div class="course-card">
+      <img src="Ảnh%20chụp%20Màn%20hình%202025-04-13%20lúc%2018.56.29.png" alt="Khoá học Python">
+      <div class="course-title">Lập Trình Python Cơ Bản</div>
+      <div class="course-desc">Học từ cơ bản đến nâng cao với dự án thực tế. Phù hợp cho người mới bắt đầu.</div>
+      <button class="btn" onclick="themVaoGio()">Thêm vào giỏ hàng</button>
+    </div>
+
+    <div class="course-card">
+      <img src="Ảnh%20chụp%20Màn%20hình%202025-04-13%20lúc%2018.57.17.png" alt="Khoá học AI">
+      <div class="course-title">Trí Tuệ Nhân Tạo Ứng Dụng</div>
+      <div class="course-desc">Tìm hiểu AI, Machine Learning & Deep Learning. Ứng dụng thực tế trong doanh nghiệp.</div>
+      <button class="btn" onclick="themVaoGio()">Thêm vào giỏ hàng</button>
+    </div>
+  </div>
+  <div class="info">
+    <p><i class="fas fa-map-marker-alt"></i> Địa chỉ: 71/34 Nguyễn Công Hoan, P.7, Q.Phú Nhuận, TP. Hồ Chí Minh</p>
+    <p><i class="fas fa-phone"></i> Điện thoại: 0379.362.034</p>
+    <p><i class="fas fa-envelope"></i> Email: minhhieu181290@gmail.com</p>
+  </div>
+
+  <div class="social">
+    <h3>Kết nối với chúng tôi</h3>
+    <div class="social-icons">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-youtube"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-tiktok"></i>
+    </div>
+  </div>
+
+  <div class="copyright">
+    © 2025 Bản quyền thuộc sở hữu của AIGROUP. 
+  </div>
+</div>
+
+<!-- Floating Buttons -->
+<head>
+  <meta charset="UTF-8">
+  <title>Liên hệ Zalo</title>
+  <style>
+    .zalo-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #0084ff;
+      color: white;
+      border-radius: 30px;
+      padding: 10px 15px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      transition: transform 0.2s ease;
+      z-index: 999;
+    }
+
+    .zalo-button:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nút Zalo với biểu tượng và chữ -->
+  <a href="https://zalo.me/0379362034" target="_blank" class="zalo-button" title="Liên hệ qua Zalo"> zalo </a>
+<!-- JavaScript hiển thị thông báo -->
+<script>
+  function themVaoGio() {
+    alert("Đã thêm thành công!");
+  }
+</script>
+ <!-- JavaScript -->
+ <script>
+  function toggleMenu() {
+    document.getElementById('menu').classList.toggle('show');
+  }
+</script>
+</body>
+</html>

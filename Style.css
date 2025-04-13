@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  header img {
+    width: 140px; /* điều chỉnh kích thước logo tại đây */
+    height: auto;
+  }
+
+  main {
+    padding: 40px 20px;
+    max-width: 800px;
+    text-align: center;
+  }
+
+  h1 {
+    color: #222;
+  }
+
+  p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+</style>
+</head>
+<body>
+
+<!-- Logo ở giữa phía trên -->
+<header>
+  <img src="Ảnh chụp Màn hình 2025-04-13 lúc 18.40.00.png" alt="Logo Ai GROUP">
+</header>
+
+<!-- Nội dung chính -->
+<main>
+  <h1>Chào mừng đến với Ai GROUP</h1>
+  <p>
+    Đây là trang chính thức của chúng tôi. Chúng tôi chuyên cung cấp giải pháp công nghệ và dịch vụ AI chất lượng cao.
+  </p>
+</body>
+</html>
